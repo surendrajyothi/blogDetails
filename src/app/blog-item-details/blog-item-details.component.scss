@@ -1,0 +1,42 @@
+.detailCard{
+    border-radius: 10px;
+    border-color: rgb(216, 219, 218);
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    max-width: 700px;
+}
+.author{
+    border-radius: 20px;
+    height: 25px;
+    width: 25px;
+    margin-right: 4px;
+}
+.author-box{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.content-image{
+  border-radius: 6px;
+    width: 100%;
+    margin-bottom: 6px;
+}
+.title{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(72, 45, 73);
+    font-family: sans-serif;
+}
+.back{
+    background: skyblue;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    color: rgb(37, 44, 255);
+    font-weight: 700;
+    margin-top: 5px;
+    padding: 3px;
+    cursor: pointer;
+}

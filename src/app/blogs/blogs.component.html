@@ -1,0 +1,11 @@
+<div *ngFor="let eachData of courseData" class="eachElement"  [routerLink]="['/blogs',eachData.id]">
+    <img src="{{eachData.image_url}}" alt="topic" class="image-element">
+    <div class="data">
+        <p>{{eachData.topic}}</p>
+        <h1 class="title">{{eachData.title}}</h1>
+        <div class="user-profile">
+            <img src="{{eachData.avatar_url}}" alt="author" class="author-image">
+            <p>{{eachData.author}}</p>
+        </div>
+    </div>
+    </div>

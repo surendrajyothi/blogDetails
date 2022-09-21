@@ -1,0 +1,44 @@
+.navBar{
+    background-color: rgb(161, 217, 243);
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo{
+        display: flex;
+        &-element{
+            height: 25px;
+            width: 25px;
+            margin-right: 6px;
+        }
+        &-text{
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 700;
+            color: #551e53;
+        }
+    }
+
+}
+.listItems{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.eachItem{
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #551e53;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.eachRoutingElements{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.activeColors{
+    color: tomato;
+    text-decoration: underline;
+}

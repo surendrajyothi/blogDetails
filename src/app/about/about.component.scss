@@ -1,0 +1,37 @@
+.about-element{
+    height: 250px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+.about{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.primary{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: serif;
+    color: #551e53;
+}
+.secondary{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: serif;
+    color: #4b4b4b;
+    text-align: center;
+}
+@media screen and (max-width:576px) {
+    .about{
+        height: auto;
+        margin-top: 50px;
+    }
+    .about-element{
+        height: 200px;
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    
+}
