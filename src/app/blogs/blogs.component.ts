@@ -9,14 +9,29 @@ import { CoursesService } from '../courses.service';
 })
 export class BlogsComponent implements OnInit {
 
-  public courseData !: any[];
+   products !: any[];
+   copyOf = this.products
+   
 
-  constructor(private _dataService:CoursesService,private _router:Router,private activeId:ActivatedRoute) { }
-
-  ngOnInit(){
-    this._dataService.getBlogsData().subscribe(data => this.courseData = data)
+  constructor(private _dataService:CoursesService,private activeId:ActivatedRoute) {
+	
+	this.activeId.queryParamMap.subscribe((qparams) =>{
+		let categoryName = qparams.get('category')
+		if(categoryName){
+			this.products = this.products.filter((filterData)=>{
+			  return filterData.category === categoryName 
+			}) 
+		  }
+		  else{
+			return this.products
+		  }
+	})	
   }
+  
+  ngOnInit(){
+    this._dataService.getBlogsData().subscribe(data => this.products = data)
 
-
+	
+  }
 
 }

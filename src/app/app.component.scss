@@ -33,12 +33,19 @@
     margin-left: 10px;
     cursor: pointer;
 }
-.eachRoutingElements{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
+
 .activeColors{
     color: tomato;
     text-decoration: underline;
+}
+.list-of-category{
+    background-color: rgb(219, 216, 216);
+    display: flex;
+    padding: 10px;
+}
+@media screen and (max-width:576px) {
+    .list-of-category{
+        flex-direction: column;
+    }
+    
 }

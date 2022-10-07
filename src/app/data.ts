@@ -1,10 +1,15 @@
 export interface data{
     id:number,
     title:string,
-    image_url:string,
-    topic:string,
-    avatar_url:string,
-    author:string
+    price:number,
+    description:string,
+    category:string,
+    image:string,
+    rating:{
+        rate:number,
+        count:number
+    }
+
 
 }
 
@@ -12,13 +17,16 @@ export interface data{
 export interface blogDetailsData{
     id:number,
     title:string,
-    image_url:string,
-    topic:string,
-    avatar_url:string,
-    author:string,
-    content:string
+    price:number,
+    description:string,
+    category:string,
+    image:string,
+    rating:{
+        rate:number,
+        count:number
+    }
 }
-// 
+
 
 
 

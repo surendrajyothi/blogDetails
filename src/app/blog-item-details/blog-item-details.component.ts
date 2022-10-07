@@ -17,6 +17,7 @@ export class BlogItemDetailsComponent implements OnInit {
     this._activateRoute.paramMap.subscribe(params =>{
       let userId = params.get('id')
       this.getBlogData(parseInt(userId!));
+      console.log(userId)
     })
     
   }

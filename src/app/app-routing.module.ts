@@ -4,12 +4,13 @@ import { AboutComponent } from './about/about.component';
 import { BlogItemDetailsComponent } from './blog-item-details/blog-item-details.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import {ContactComponent} from './contact/contact.component'
+import { CoursesService } from './courses.service';
 import { NotfoundComponent } from './notfound/notfound.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'/blogs',pathMatch:'full'},
-  {path:'blogs',component:BlogsComponent},
-  {path:'blogs/:id',component:BlogItemDetailsComponent},
+  {path:'',redirectTo:'/products',pathMatch:'full'},
+  {path:'products',component:BlogsComponent},
+  {path:'product/:id',component:BlogItemDetailsComponent,canActivate:[CoursesService]},
   {path:'about',component:AboutComponent},
   {path:'contact',component:ContactComponent},
   {path:"**" ,component:NotfoundComponent}

@@ -10,3 +10,22 @@ ul{
 a{
     text-decoration: none;
 }
+.eachCategory{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.eachCategory:hover{
+    background-color: rgb(208, 245, 245);
+
+    
+}
+@media screen and (max-width:576px) {
+    .eachCategory{
+        margin-bottom: 6px;
+    }
+    
+}

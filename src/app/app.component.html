@@ -4,12 +4,28 @@
       <span class="navBar-logo-text">Wave</span>
     </div>
     <ul class="listItems">
-      <li><a class="eachItem" routerLink="blogs" routerLinkActive="activeColors">Home</a></li>
+      <li><a class="eachItem" routerLink="products" routerLinkActive="activeColors">Home</a></li>
       <li><a class="eachItem" routerLink="about" routerLinkActive="activeColors">About</a></li>
       <li><a class="eachItem" routerLink="contact" routerLinkActive="activeColors">Contact</a></li>
     </ul>
   </nav>
-<div class="eachRoutingElements">
-	<router-outlet></router-outlet>
-</div>
+  <ul class="list-of-category">
+    <li class="eachCategory">
+      <a routerLink="/products">All Products</a>
+	</li>
+    <li class="eachCategory" >
+      <a routerLink ="/products" [queryParams]="{'category':'men'}">Men</a>
+	</li>
+    <li class="eachCategory">
+      <a routerLink ="/products" [queryParams]="{'category':'electronics'}">Electronics</a>
+	</li>
+	<li class="eachCategory">
+		<a routerLink ="/products" [queryParams]="{'category':'women'}">Women</a>
+	  </li>
+    <li class="eachCategory">
+      <a routerLink ="/products" [queryParams]="{'category':'jewelery'}">Jewellery</a>
+	</li>
+  </ul>
+  <router-outlet></router-outlet>
+
 

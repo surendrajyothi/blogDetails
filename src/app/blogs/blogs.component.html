@@ -1,11 +1,13 @@
-<div *ngFor="let eachData of courseData" class="eachElement"  [routerLink]="['/blogs',eachData.id]">
-    <img src="{{eachData.image_url}}" alt="topic" class="image-element">
-    <div class="data">
-        <p>{{eachData.topic}}</p>
-        <h1 class="title">{{eachData.title}}</h1>
-        <div class="user-profile">
-            <img src="{{eachData.avatar_url}}" alt="author" class="author-image">
-            <p>{{eachData.author}}</p>
-        </div>
+<div class="all-products">
+    <div *ngFor="let eachProduct of products">
+        <a [routerLink]="['/product',eachProduct.id]"  class="productCard">
+            <img src="{{eachProduct.image}}" alt="product" class="productImage">
+            <div class="priceBox">
+                <p class="title">{{eachProduct.title.slice(0,35)}}</p>
+                <span class="price">Rs-{{eachProduct.price*25}}/-</span>
+            </div>
+            <button class="buyNow">Buy Now</button>
+        </a>
     </div>
-    </div>
+</div>
+

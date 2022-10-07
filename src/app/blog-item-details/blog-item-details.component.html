@@ -1,12 +1,17 @@
-<div class="detailCard">
-    <h1 class="title">{{blogFullDetails.title}}</h1>
-    <div class="content">
-        <div class="author-box">
-            <img src="{{blogFullDetails.avatar_url}}" alt="authorUrl" class="author"/>
-            {{blogFullDetails.author}}
+<div class="product-detail">
+    <div class="product-detail-card">
+        <img src="{{blogFullDetails.image}}" alt="itemImage" class="productStyle">
+        <div class="details">
+            <p class="price">Rs:{{blogFullDetails.price*25}}/-</p>
+            <h2 class="title">{{blogFullDetails.title}}:</h2>
+            <p class="description">{{blogFullDetails.description}}</p>
+            <div class="rating-container">
+                <h2>Rating: <span class="rate">{{blogFullDetails.rating.rate}}</span></h2>
+                <h2 class="like">Likes:<span class="rate">{{blogFullDetails.rating.count}}</span></h2>
+            </div>
+            <button class="addtoCart">Add To Cart</button>
         </div>
-        <img src="{{blogFullDetails.image_url}}" alt="content" class="content-image"/>
-        <p>{{blogFullDetails.content}}</p>
+        
     </div>
 </div>
-<button class="back" [routerLink]="['/blogs']">Back</button>
+
